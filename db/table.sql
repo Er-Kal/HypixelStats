@@ -20,8 +20,27 @@ CREATE TABLE bedwars_stats (
     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP -- Timestamp of the stat entry
 );
 
-create policy "Insert"
-on "public"."bedwars_stats"
-as RESTRICTIVE
-for INSERT
-to service_role
+CREATE POLICY "Allow insert only from service_role"
+ON "public"."bedwars_stats"
+FOR INSERT
+TO service_role
+WITH CHECK (true);
+
+CREATE POLICY "Allow read access to all users"
+ON "public"."bedwars_stats"
+FOR SELECT
+TO anon
+USING (true);
+
+CREATE POLICY "Allow update only from service_role"
+ON "public"."bedwars_stats"
+FOR UPDATE
+TO service_role
+USING (true)
+WITH CHECK (true);
+
+CREATE POLICY "Allow delete only from service_role"
+ON "public"."bedwars_stats"
+FOR DELETE
+TO service_role
+USING (true);
