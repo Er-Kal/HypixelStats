@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("/frontend/fonts/MinecraftRegular-Bmg3.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "MyCustomFont", sans-serif;
+}/*# sourceMappingURL=main.css.map */

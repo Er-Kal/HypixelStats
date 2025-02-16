@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@supabase/supabase-js": "^2.48.1",
+    "vite": "^6.1.0"
+  },
+  "name": "hypixelstats",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
