@@ -5,7 +5,46 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-  }
-  body {
+}
+body {
     font-family: 'MyCustomFont', sans-serif;
-  }
+    margin: 24px;
+    background-color: #5B839D;
+}
+#playerInfo{
+    display: flex;
+    background-color: #AC625F;
+    width:25vw;
+    min-width: fit-content;
+    min-height: fit-content;
+    height:7.2rem;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 2vh;
+    border-radius: 16px;
+    border-bottom: #436074 solid 2px;
+    img{
+        padding-right: 2vh;
+        height:100%;
+    }
+    h1{
+        color:white;
+        margin-top: 0;
+    }
+    margin-bottom: 16px;
+}
+#currentMonthData{
+    min-width: fit-content;
+    background-color: #EBCAA8;
+    padding:2vw;
+    width:max-content;
+}
+
+#monthContent {
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: repeat(7, 1fr); /* Create 7 equal columns */
+    gap: 10px; /* Add spacing between items */
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
