@@ -1,4 +1,8 @@
 
 .env
 /node_modules/
+<<<<<<< HEAD
 /__pycache__/
+=======
+/__pycache__/
+>>>>>>> cdde52952a77165ded35d96fb97f966d7a33ffed
