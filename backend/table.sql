@@ -15,7 +15,13 @@ CREATE TABLE bedwars_stats (
     quads_final_kills INT NOT NULL DEFAULT 0, -- Final kills
     quads_final_deaths INT NOT NULL DEFAULT 0, -- Final deaths
     quads_beds_broken INT NOT NULL DEFAULT 0, -- Beds broken
-    quads_beds_lost INT NOT NULL DEFAULT 0, -- Beds lost
+    quads_beds_lost INT NOT NULL DEFAULT 0,-- Beds lost
+    two_four_final_kills INT NOT NULL DEFAULT 0,
+    two_four_final_deaths INT NOT NULL DEFAULT 0,
+    two_four_beds_broken INT NOT NULL DEFAULT 0,
+    two_four_beds_lost INT NOT NULL DEFAULT 0,
+    wins INT NOT NULL DEFAULT 0,
+    losses INT NOT NULL DEFAULT 0,
     bw_level INT NOT NULL DEFAULT 0, -- Player Level
     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP -- Timestamp of the stat entry
 );
@@ -44,3 +50,6 @@ ON "public"."bedwars_stats"
 FOR DELETE
 TO service_role
 USING (true);
+
+
+

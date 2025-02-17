@@ -39,6 +39,14 @@ response = (
             "quads_final_deaths": bedwars_data["four_four_final_deaths_bedwars"],
             "quads_beds_broken": bedwars_data["four_four_beds_broken_bedwars"],
             "quads_beds_lost": bedwars_data["four_four_beds_lost_bedwars"],
+            
+            "two_four_final_kills": bedwars_data["two_four_final_kills_bedwars"],
+            "two_four_final_deaths": bedwars_data["two_four_final_deaths_bedwars"],
+            "two_four_beds_broken": bedwars_data["two_four_beds_broken_bedwars"],
+            "two_four_beds_lost": bedwars_data["two_four_beds_lost_bedwars"],
+
+            "wins": bedwars_data["wins_bedwars"],
+            "losses": bedwars_data["losses_bedwars"],
 
             "bw_level": data["player"]["achievements"]["bedwars_level"]
 
